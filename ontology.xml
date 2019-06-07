@@ -1,0 +1,301 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://bim.aalto.fi/DiCtion/Ontology/"
+     xml:base="http://bim.aalto.fi/DiCtion/Ontology/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://bim.aalto.fi/DiCtion/Ontology/">
+        <owl:versionIRI rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/ConstructionOrganization/0.9.1"/>
+        <rdfs:comment xml:lang="en">Seppo Torma</rdfs:comment>
+        <rdfs:comment xml:lang="en">This Construction Organization ontology is known as one module of SSP ontology of DiCtion project. The purpose of this module is to support data sharing of the organization and business information that related to the construction project. This module can be used in organization-related information management use cases.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Yuan Zheng</rdfs:comment>
+        <owl:versionInfo>0.9.1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/belongsTo -->
+
+
+    <owl:ObjectProperty rdf:about="http://bim.aalto.fi/DiCtion/Ontology/belongsTo">
+        <rdfs:domain rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/Person"/>
+        <rdfs:range rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/Organization"/>
+        <rdfs:comment xml:lang="en">Relation of Personnel affiliation between a Person and a Organization.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/depandsOn -->
+
+
+    <owl:ObjectProperty rdf:about="http://bim.aalto.fi/DiCtion/Ontology/depandsOn">
+        <rdfs:domain rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/Obligation"/>
+        <rdfs:range rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/DependencyConstraint"/>
+        <rdfs:comment xml:lang="en">Relation between an Obligation and its correspondent dependency constraints</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/fulfilObligation -->
+
+
+    <owl:ObjectProperty rdf:about="http://bim.aalto.fi/DiCtion/Ontology/fulfilObligation">
+        <rdfs:domain rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/Actor"/>
+        <rdfs:range rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/Obligation"/>
+        <rdfs:comment xml:lang="en">A relation between an actor who should fulfil obligation and the obligation</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/hasObject -->
+
+
+    <owl:ObjectProperty rdf:about="http://bim.aalto.fi/DiCtion/Ontology/hasObject">
+        <rdfs:domain rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/Delivery"/>
+        <rdfs:range rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/DomainObject"/>
+        <rdfs:comment xml:lang="en">A relation of between object-relevant concepts and their related domain object</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/isPromiseeof -->
+
+
+    <owl:ObjectProperty rdf:about="http://bim.aalto.fi/DiCtion/Ontology/isPromiseeof">
+        <rdfs:domain rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/Actor"/>
+        <rdfs:range rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/Contract"/>
+        <rdfs:comment xml:lang="en">Relation that indicates an actor is the promisee of correspondent contract</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/isPromisorof -->
+
+
+    <owl:ObjectProperty rdf:about="http://bim.aalto.fi/DiCtion/Ontology/isPromisorof">
+        <rdfs:domain rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/Actor"/>
+        <rdfs:range rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/Contract"/>
+        <rdfs:comment xml:lang="en">Relation that indicates an actor is the promisor of correspondent contract</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/isResponsiblefor -->
+
+
+    <owl:ObjectProperty rdf:about="http://bim.aalto.fi/DiCtion/Ontology/isResponsiblefor">
+        <rdfs:domain rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/Actor"/>
+        <rdfs:range rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/Activity"/>
+        <rdfs:comment xml:lang="en">relation between an actor and its responsible activity</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/receiveObligation -->
+
+
+    <owl:ObjectProperty rdf:about="http://bim.aalto.fi/DiCtion/Ontology/receiveObligation">
+        <rdfs:domain rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/Actor"/>
+        <rdfs:range rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/Obligation"/>
+        <rdfs:comment xml:lang="en">A relation between an actor who receive obligation and the obligation</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/retricts -->
+
+
+    <owl:ObjectProperty rdf:about="http://bim.aalto.fi/DiCtion/Ontology/retricts">
+        <rdfs:domain rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/Contract"/>
+        <rdfs:range rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/Obligation"/>
+        <rdfs:comment>Relation between Contract and Obligation that indicates obligation is restricted by corresdented statement in Contract</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/Activity -->
+
+
+    <owl:Class rdf:about="http://bim.aalto.fi/DiCtion/Ontology/Activity">
+        <rdfs:subClassOf rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/DomainObject"/>
+        <rdfs:comment xml:lang="en">Activity is the concept refers to all the works (or aggregations of works) that carried out in a construction project.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/Actor -->
+
+
+    <owl:Class rdf:about="http://bim.aalto.fi/DiCtion/Ontology/Actor">
+        <rdfs:subClassOf rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/Resource"/>
+        <rdfs:comment xml:lang="en">Actor is a subclass of Resource, which refers to all the agents that are responsible of activities.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/Company -->
+
+
+    <owl:Class rdf:about="http://bim.aalto.fi/DiCtion/Ontology/Company">
+        <rdfs:subClassOf rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/Organization"/>
+        <rdfs:comment xml:lang="en">A commercial business unit that involves in the process.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/Contract -->
+
+
+    <owl:Class rdf:about="http://bim.aalto.fi/DiCtion/Ontology/Contract">
+        <rdfs:comment xml:lang="en">An agreement that declares the obligations and duties for each of the participants.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/Delivery -->
+
+
+    <owl:Class rdf:about="http://bim.aalto.fi/DiCtion/Ontology/Delivery">
+        <rdfs:subClassOf rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/Obligation"/>
+        <rdfs:comment xml:lang="en">the action of delivering required objects</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/DependencyConstraint -->
+
+
+    <owl:Class rdf:about="http://bim.aalto.fi/DiCtion/Ontology/DependencyConstraint">
+        <rdfs:comment xml:lang="en">Constraints to formalize the obligations</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/DomainObject -->
+
+
+    <owl:Class rdf:about="http://bim.aalto.fi/DiCtion/Ontology/DomainObject">
+        <rdfs:comment xml:lang="en">Domain objects is a abstract concept that refers to all the central objects that are discussed in the construction project planning and management. Sub-classes of the domain object include the &apos;Activity&apos;,&apos;Group&apos;,&apos;Information Entity&apos;,&apos;Physical Entity&apos;,and &apos;Resource&apos;. Domain objects can have their specific classification that is defined by certain classification scheme in the construction domain, such as Uniformat, Omniclass and etc. Meanwhile, they can also have their level assignment that is defined based level of detail, level of development, level of application and etc.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/DueDate -->
+
+
+    <owl:Class rdf:about="http://bim.aalto.fi/DiCtion/Ontology/DueDate">
+        <rdfs:subClassOf rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/DependencyConstraint"/>
+        <rdfs:comment xml:lang="en">An time constraint of the final time of fulfiling the obligation</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/LeadTime -->
+
+
+    <owl:Class rdf:about="http://bim.aalto.fi/DiCtion/Ontology/LeadTime">
+        <rdfs:subClassOf rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/DependencyConstraint"/>
+        <rdfs:comment xml:lang="en">An time constraint of the time between the initiation and completion of a production process.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/Obligation -->
+
+
+    <owl:Class rdf:about="http://bim.aalto.fi/DiCtion/Ontology/Obligation">
+        <rdfs:comment xml:lang="en">Obligation refers to specific duty of an actor to act, which is determined base on the contract.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/Organization -->
+
+
+    <owl:Class rdf:about="http://bim.aalto.fi/DiCtion/Ontology/Organization">
+        <rdfs:subClassOf rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/Actor"/>
+        <rdfs:comment xml:lang="en">An organized group of people with a particular purpose involves in the process.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/Payment -->
+
+
+    <owl:Class rdf:about="http://bim.aalto.fi/DiCtion/Ontology/Payment">
+        <rdfs:subClassOf rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/Obligation"/>
+        <rdfs:comment xml:lang="en">the action or process of paying</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/Person -->
+
+
+    <owl:Class rdf:about="http://bim.aalto.fi/DiCtion/Ontology/Person">
+        <rdfs:subClassOf rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/Actor"/>
+        <rdfs:comment xml:lang="en">A human being involves in the process.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/Resource -->
+
+
+    <owl:Class rdf:about="http://bim.aalto.fi/DiCtion/Ontology/Resource">
+        <rdfs:subClassOf rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/DomainObject"/>
+        <rdfs:comment xml:lang="en">Resource concept refers to the objects within a construction project that participate in value-adding transformations but that are not ultimately transformed themselves (such as labors and equipments).</rdfs:comment>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/ -->
+
+

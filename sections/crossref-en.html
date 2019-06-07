@@ -1,0 +1,709 @@
+<html><h2 id="crossreference" class="list">Cross reference for Construction Organization classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Construction Organization.
+<div id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#Activity" title="http://bim.aalto.fi/DiCtion/Ontology/Activity">
+            <span>activity</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Actor" title="http://bim.aalto.fi/DiCtion/Ontology/Actor">
+            <span>actor</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Company" title="http://bim.aalto.fi/DiCtion/Ontology/Company">
+            <span>company</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Contract" title="http://bim.aalto.fi/DiCtion/Ontology/Contract">
+            <span>contract</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Delivery" title="http://bim.aalto.fi/DiCtion/Ontology/Delivery">
+            <span>delivery</span>
+         </a>
+      </li>
+      <li>
+         <a href="#DependencyConstraint"
+            title="http://bim.aalto.fi/DiCtion/Ontology/DependencyConstraint">
+            <span>dependency constraint</span>
+         </a>
+      </li>
+      <li>
+         <a href="#DomainObject"
+            title="http://bim.aalto.fi/DiCtion/Ontology/DomainObject">
+            <span>domain object</span>
+         </a>
+      </li>
+      <li>
+         <a href="#DueDate" title="http://bim.aalto.fi/DiCtion/Ontology/DueDate">
+            <span>due date</span>
+         </a>
+      </li>
+      <li>
+         <a href="#LeadTime" title="http://bim.aalto.fi/DiCtion/Ontology/LeadTime">
+            <span>lead time</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Obligation" title="http://bim.aalto.fi/DiCtion/Ontology/Obligation">
+            <span>obligation</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Organization"
+            title="http://bim.aalto.fi/DiCtion/Ontology/Organization">
+            <span>organization</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Payment" title="http://bim.aalto.fi/DiCtion/Ontology/Payment">
+            <span>payment</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Person" title="http://bim.aalto.fi/DiCtion/Ontology/Person">
+            <span>person</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Resource" title="http://bim.aalto.fi/DiCtion/Ontology/Resource">
+            <span>resource</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="Activity">
+      <h3>activity<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/Activity</p>
+      <div class="comment">
+         <span class="markdown">Activity is the concept refers to all the works (or aggregations of works) that carried out in a construction project.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#DomainObject"
+               title="http://bim.aalto.fi/DiCtion/Ontology/DomainObject">domain object</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#isResponsiblefor"
+               title="http://bim.aalto.fi/DiCtion/Ontology/isResponsiblefor">is responsiblefor</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Actor">
+      <h3>actor<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/Actor</p>
+      <div class="comment">
+         <span class="markdown">Actor is a subclass of Resource, which refers to all the agents that are responsible of activities.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Resource" title="http://bim.aalto.fi/DiCtion/Ontology/Resource">resource</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Organization"
+               title="http://bim.aalto.fi/DiCtion/Ontology/Organization">organization</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Person" title="http://bim.aalto.fi/DiCtion/Ontology/Person">person</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#fulfilObligation"
+               title="http://bim.aalto.fi/DiCtion/Ontology/fulfilObligation">fulfil obligation</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isPromiseeof" title="http://bim.aalto.fi/DiCtion/Ontology/isPromiseeof">is promiseeof</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isPromisorof" title="http://bim.aalto.fi/DiCtion/Ontology/isPromisorof">is promisorof</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isResponsiblefor"
+               title="http://bim.aalto.fi/DiCtion/Ontology/isResponsiblefor">is responsiblefor</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#receiveObligation"
+               title="http://bim.aalto.fi/DiCtion/Ontology/receiveObligation">receive obligation</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Company">
+      <h3>company<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/Company</p>
+      <div class="comment">
+         <span class="markdown">A commercial business unit that involves in the process.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Organization"
+               title="http://bim.aalto.fi/DiCtion/Ontology/Organization">organization</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Contract">
+      <h3>contract<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/Contract</p>
+      <div class="comment">
+         <span class="markdown">An agreement that declares the obligations and duties for each of the participants.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#retricts" title="http://bim.aalto.fi/DiCtion/Ontology/retricts">retricts</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#isPromiseeof" title="http://bim.aalto.fi/DiCtion/Ontology/isPromiseeof">is promiseeof</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isPromisorof" title="http://bim.aalto.fi/DiCtion/Ontology/isPromisorof">is promisorof</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Delivery">
+      <h3>delivery<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/Delivery</p>
+      <div class="comment">
+         <span class="markdown">the action of delivering required objects</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Obligation" title="http://bim.aalto.fi/DiCtion/Ontology/Obligation">obligation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasObject" title="http://bim.aalto.fi/DiCtion/Ontology/hasObject">has object</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="DependencyConstraint">
+      <h3>dependency constraint<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/DependencyConstraint</p>
+      <div class="comment">
+         <span class="markdown">Constraints to formalize the obligations</span>
+      </div>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#DueDate" title="http://bim.aalto.fi/DiCtion/Ontology/DueDate">due date</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#LeadTime" title="http://bim.aalto.fi/DiCtion/Ontology/LeadTime">lead time</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#depandsOn" title="http://bim.aalto.fi/DiCtion/Ontology/depandsOn">depands on</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="DomainObject">
+      <h3>domain object<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/DomainObject</p>
+      <div class="comment">
+         <span class="markdown">Domain objects is a abstract concept that refers to all the central objects that are discussed in the construction project planning and management. Sub-classes of the domain object include the 'Activity','Group','Information Entity','Physical Entity',and 'Resource'. Domain objects can have their specific classification that is defined by certain classification scheme in the construction domain, such as Uniformat, Omniclass and etc. Meanwhile, they can also have their level assignment that is defined based level of detail, level of development, level of application and etc.</span>
+      </div>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Activity" title="http://bim.aalto.fi/DiCtion/Ontology/Activity">activity</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Resource" title="http://bim.aalto.fi/DiCtion/Ontology/Resource">resource</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasObject" title="http://bim.aalto.fi/DiCtion/Ontology/hasObject">has object</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="DueDate">
+      <h3>due date<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/DueDate</p>
+      <div class="comment">
+         <span class="markdown">An time constraint of the final time of fulfiling the obligation</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#DependencyConstraint"
+               title="http://bim.aalto.fi/DiCtion/Ontology/DependencyConstraint">dependency constraint</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="LeadTime">
+      <h3>lead time<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/LeadTime</p>
+      <div class="comment">
+         <span class="markdown">An time constraint of the time between the initiation and completion of a production process.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#DependencyConstraint"
+               title="http://bim.aalto.fi/DiCtion/Ontology/DependencyConstraint">dependency constraint</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Obligation">
+      <h3>obligation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/Obligation</p>
+      <div class="comment">
+         <span class="markdown">Obligation refers to specific duty of an actor to act, which is determined base on the contract.</span>
+      </div>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Delivery" title="http://bim.aalto.fi/DiCtion/Ontology/Delivery">delivery</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Payment" title="http://bim.aalto.fi/DiCtion/Ontology/Payment">payment</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#depandsOn" title="http://bim.aalto.fi/DiCtion/Ontology/depandsOn">depands on</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#fulfilObligation"
+               title="http://bim.aalto.fi/DiCtion/Ontology/fulfilObligation">fulfil obligation</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#receiveObligation"
+               title="http://bim.aalto.fi/DiCtion/Ontology/receiveObligation">receive obligation</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#retricts" title="http://bim.aalto.fi/DiCtion/Ontology/retricts">retricts</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Organization">
+      <h3>organization<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/Organization</p>
+      <div class="comment">
+         <span class="markdown">An organized group of people with a particular purpose involves in the process.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Actor" title="http://bim.aalto.fi/DiCtion/Ontology/Actor">actor</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Company" title="http://bim.aalto.fi/DiCtion/Ontology/Company">company</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#belongsTo" title="http://bim.aalto.fi/DiCtion/Ontology/belongsTo">belongs to</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Payment">
+      <h3>payment<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/Payment</p>
+      <div class="comment">
+         <span class="markdown">the action or process of paying</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Obligation" title="http://bim.aalto.fi/DiCtion/Ontology/Obligation">obligation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Person">
+      <h3>person<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/Person</p>
+      <div class="comment">
+         <span class="markdown">A human being involves in the process.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Actor" title="http://bim.aalto.fi/DiCtion/Ontology/Actor">actor</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#belongsTo" title="http://bim.aalto.fi/DiCtion/Ontology/belongsTo">belongs to</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Resource">
+      <h3>resource<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/Resource</p>
+      <div class="comment">
+         <span class="markdown">Resource concept refers to the objects within a construction project that participate in value-adding transformations but that are not ultimately transformed themselves (such as labors and equipments).</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#DomainObject"
+               title="http://bim.aalto.fi/DiCtion/Ontology/DomainObject">domain object</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Actor" title="http://bim.aalto.fi/DiCtion/Ontology/Actor">actor</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#belongsTo" title="http://bim.aalto.fi/DiCtion/Ontology/belongsTo">
+            <span>belongs to</span>
+         </a>
+      </li>
+      <li>
+         <a href="#depandsOn" title="http://bim.aalto.fi/DiCtion/Ontology/depandsOn">
+            <span>depands on</span>
+         </a>
+      </li>
+      <li>
+         <a href="#fulfilObligation"
+            title="http://bim.aalto.fi/DiCtion/Ontology/fulfilObligation">
+            <span>fulfil obligation</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasObject" title="http://bim.aalto.fi/DiCtion/Ontology/hasObject">
+            <span>has object</span>
+         </a>
+      </li>
+      <li>
+         <a href="#isPromiseeof" title="http://bim.aalto.fi/DiCtion/Ontology/isPromiseeof">
+            <span>is promiseeof</span>
+         </a>
+      </li>
+      <li>
+         <a href="#isPromisorof" title="http://bim.aalto.fi/DiCtion/Ontology/isPromisorof">
+            <span>is promisorof</span>
+         </a>
+      </li>
+      <li>
+         <a href="#isResponsiblefor"
+            title="http://bim.aalto.fi/DiCtion/Ontology/isResponsiblefor">
+            <span>is responsiblefor</span>
+         </a>
+      </li>
+      <li>
+         <a href="#receiveObligation"
+            title="http://bim.aalto.fi/DiCtion/Ontology/receiveObligation">
+            <span>receive obligation</span>
+         </a>
+      </li>
+      <li>
+         <a href="#retricts" title="http://bim.aalto.fi/DiCtion/Ontology/retricts">
+            <span>retricts</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="belongsTo">
+      <h3>belongs to<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/belongsTo</p>
+      <div class="comment">
+         <span class="markdown">Relation of Personnel affiliation between a Person and a Organization.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Person" title="http://bim.aalto.fi/DiCtion/Ontology/Person">person</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Organization"
+                  title="http://bim.aalto.fi/DiCtion/Ontology/Organization">organization</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="depandsOn">
+      <h3>depands on<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/depandsOn</p>
+      <div class="comment">
+         <span class="markdown">Relation between an Obligation and its correspondent dependency constraints</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Obligation" title="http://bim.aalto.fi/DiCtion/Ontology/Obligation">obligation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#DependencyConstraint"
+                  title="http://bim.aalto.fi/DiCtion/Ontology/DependencyConstraint">dependency constraint</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="fulfilObligation">
+      <h3>fulfil obligation<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/fulfilObligation</p>
+      <div class="comment">
+         <span class="markdown">A relation between an actor who should fulfil obligation and the obligation</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Actor" title="http://bim.aalto.fi/DiCtion/Ontology/Actor">actor</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Obligation" title="http://bim.aalto.fi/DiCtion/Ontology/Obligation">obligation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasObject">
+      <h3>has object<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/hasObject</p>
+      <div class="comment">
+         <span class="markdown">A relation of between object-relevant concepts and their related domain object</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Delivery" title="http://bim.aalto.fi/DiCtion/Ontology/Delivery">delivery</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#DomainObject"
+                  title="http://bim.aalto.fi/DiCtion/Ontology/DomainObject">domain object</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isPromiseeof">
+      <h3>is promiseeof<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/isPromiseeof</p>
+      <div class="comment">
+         <span class="markdown">Relation that indicates an actor is the promisee of correspondent contract</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Actor" title="http://bim.aalto.fi/DiCtion/Ontology/Actor">actor</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Contract" title="http://bim.aalto.fi/DiCtion/Ontology/Contract">contract</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isPromisorof">
+      <h3>is promisorof<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/isPromisorof</p>
+      <div class="comment">
+         <span class="markdown">Relation that indicates an actor is the promisor of correspondent contract</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Actor" title="http://bim.aalto.fi/DiCtion/Ontology/Actor">actor</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Contract" title="http://bim.aalto.fi/DiCtion/Ontology/Contract">contract</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isResponsiblefor">
+      <h3>is responsiblefor<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/isResponsiblefor</p>
+      <div class="comment">
+         <span class="markdown">relation between an actor and its responsible activity</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Actor" title="http://bim.aalto.fi/DiCtion/Ontology/Actor">actor</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Activity" title="http://bim.aalto.fi/DiCtion/Ontology/Activity">activity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="receiveObligation">
+      <h3>receive obligation<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/receiveObligation</p>
+      <div class="comment">
+         <span class="markdown">A relation between an actor who receive obligation and the obligation</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Actor" title="http://bim.aalto.fi/DiCtion/Ontology/Actor">actor</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Obligation" title="http://bim.aalto.fi/DiCtion/Ontology/Obligation">obligation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="retricts">
+      <h3>retricts<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/retricts</p>
+      <div class="comment">
+         <span class="markdown">Relation between Contract and Obligation that indicates obligation is restricted by corresdented statement in Contract</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Contract" title="http://bim.aalto.fi/DiCtion/Ontology/Contract">contract</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Obligation" title="http://bim.aalto.fi/DiCtion/Ontology/Obligation">obligation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>
+</html>

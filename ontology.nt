@@ -1,0 +1,157 @@
+<http://bim.aalto.fi/DiCtion/Ontology/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://bim.aalto.fi/DiCtion/Ontology/> <http://www.w3.org/2002/07/owl#versionIRI> <http://bim.aalto.fi/DiCtion/Ontology/ConstructionOrganization/0.9.1> .
+<http://bim.aalto.fi/DiCtion/Ontology/> <http://www.w3.org/2000/01/rdf-schema#comment> "Seppo Torma"@en .
+<http://bim.aalto.fi/DiCtion/Ontology/> <http://www.w3.org/2000/01/rdf-schema#comment> "This Construction Organization ontology is known as one module of SSP ontology of DiCtion project. The purpose of this module is to support data sharing of the organization and business information that related to the construction project. This module can be used in organization-related information management use cases."@en .
+<http://bim.aalto.fi/DiCtion/Ontology/> <http://www.w3.org/2000/01/rdf-schema#comment> "Yuan Zheng"@en .
+<http://bim.aalto.fi/DiCtion/Ontology/> <http://www.w3.org/2002/07/owl#versionInfo> "0.9.1" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://bim.aalto.fi/DiCtion/Ontology/belongsTo
+<http://bim.aalto.fi/DiCtion/Ontology/belongsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bim.aalto.fi/DiCtion/Ontology/belongsTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bim.aalto.fi/DiCtion/Ontology/Person> .
+<http://bim.aalto.fi/DiCtion/Ontology/belongsTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://bim.aalto.fi/DiCtion/Ontology/Organization> .
+<http://bim.aalto.fi/DiCtion/Ontology/belongsTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation of Personnel affiliation between a Person and a Organization."@en .
+# 
+# http://bim.aalto.fi/DiCtion/Ontology/depandsOn
+<http://bim.aalto.fi/DiCtion/Ontology/depandsOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bim.aalto.fi/DiCtion/Ontology/depandsOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bim.aalto.fi/DiCtion/Ontology/Obligation> .
+<http://bim.aalto.fi/DiCtion/Ontology/depandsOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://bim.aalto.fi/DiCtion/Ontology/DependencyConstraint> .
+<http://bim.aalto.fi/DiCtion/Ontology/depandsOn> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between an Obligation and its correspondent dependency constraints"@en .
+# 
+# http://bim.aalto.fi/DiCtion/Ontology/fulfilObligation
+<http://bim.aalto.fi/DiCtion/Ontology/fulfilObligation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bim.aalto.fi/DiCtion/Ontology/fulfilObligation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bim.aalto.fi/DiCtion/Ontology/Actor> .
+<http://bim.aalto.fi/DiCtion/Ontology/fulfilObligation> <http://www.w3.org/2000/01/rdf-schema#range> <http://bim.aalto.fi/DiCtion/Ontology/Obligation> .
+<http://bim.aalto.fi/DiCtion/Ontology/fulfilObligation> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between an actor who should fulfil obligation and the obligation"@en .
+# 
+# http://bim.aalto.fi/DiCtion/Ontology/hasObject
+<http://bim.aalto.fi/DiCtion/Ontology/hasObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bim.aalto.fi/DiCtion/Ontology/hasObject> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bim.aalto.fi/DiCtion/Ontology/Delivery> .
+<http://bim.aalto.fi/DiCtion/Ontology/hasObject> <http://www.w3.org/2000/01/rdf-schema#range> <http://bim.aalto.fi/DiCtion/Ontology/DomainObject> .
+<http://bim.aalto.fi/DiCtion/Ontology/hasObject> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation of between object-relevant concepts and their related domain object"@en .
+# 
+# http://bim.aalto.fi/DiCtion/Ontology/isPromiseeof
+<http://bim.aalto.fi/DiCtion/Ontology/isPromiseeof> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bim.aalto.fi/DiCtion/Ontology/isPromiseeof> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bim.aalto.fi/DiCtion/Ontology/Actor> .
+<http://bim.aalto.fi/DiCtion/Ontology/isPromiseeof> <http://www.w3.org/2000/01/rdf-schema#range> <http://bim.aalto.fi/DiCtion/Ontology/Contract> .
+<http://bim.aalto.fi/DiCtion/Ontology/isPromiseeof> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation that indicates an actor is the promisee of correspondent contract"@en .
+# 
+# http://bim.aalto.fi/DiCtion/Ontology/isPromisorof
+<http://bim.aalto.fi/DiCtion/Ontology/isPromisorof> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bim.aalto.fi/DiCtion/Ontology/isPromisorof> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bim.aalto.fi/DiCtion/Ontology/Actor> .
+<http://bim.aalto.fi/DiCtion/Ontology/isPromisorof> <http://www.w3.org/2000/01/rdf-schema#range> <http://bim.aalto.fi/DiCtion/Ontology/Contract> .
+<http://bim.aalto.fi/DiCtion/Ontology/isPromisorof> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation that indicates an actor is the promisor of correspondent contract"@en .
+# 
+# http://bim.aalto.fi/DiCtion/Ontology/isResponsiblefor
+<http://bim.aalto.fi/DiCtion/Ontology/isResponsiblefor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bim.aalto.fi/DiCtion/Ontology/isResponsiblefor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bim.aalto.fi/DiCtion/Ontology/Actor> .
+<http://bim.aalto.fi/DiCtion/Ontology/isResponsiblefor> <http://www.w3.org/2000/01/rdf-schema#range> <http://bim.aalto.fi/DiCtion/Ontology/Activity> .
+<http://bim.aalto.fi/DiCtion/Ontology/isResponsiblefor> <http://www.w3.org/2000/01/rdf-schema#comment> "relation between an actor and its responsible activity"@en .
+# 
+# http://bim.aalto.fi/DiCtion/Ontology/receiveObligation
+<http://bim.aalto.fi/DiCtion/Ontology/receiveObligation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bim.aalto.fi/DiCtion/Ontology/receiveObligation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bim.aalto.fi/DiCtion/Ontology/Actor> .
+<http://bim.aalto.fi/DiCtion/Ontology/receiveObligation> <http://www.w3.org/2000/01/rdf-schema#range> <http://bim.aalto.fi/DiCtion/Ontology/Obligation> .
+<http://bim.aalto.fi/DiCtion/Ontology/receiveObligation> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between an actor who receive obligation and the obligation"@en .
+# 
+# http://bim.aalto.fi/DiCtion/Ontology/retricts
+<http://bim.aalto.fi/DiCtion/Ontology/retricts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bim.aalto.fi/DiCtion/Ontology/retricts> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bim.aalto.fi/DiCtion/Ontology/Contract> .
+<http://bim.aalto.fi/DiCtion/Ontology/retricts> <http://www.w3.org/2000/01/rdf-schema#range> <http://bim.aalto.fi/DiCtion/Ontology/Obligation> .
+<http://bim.aalto.fi/DiCtion/Ontology/retricts> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between Contract and Obligation that indicates obligation is restricted by corresdented statement in Contract" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://bim.aalto.fi/DiCtion/Ontology/Activity
+<http://bim.aalto.fi/DiCtion/Ontology/Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bim.aalto.fi/DiCtion/Ontology/Activity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bim.aalto.fi/DiCtion/Ontology/DomainObject> .
+<http://bim.aalto.fi/DiCtion/Ontology/Activity> <http://www.w3.org/2000/01/rdf-schema#comment> "Activity is the concept refers to all the works (or aggregations of works) that carried out in a construction project."@en .
+# 
+# http://bim.aalto.fi/DiCtion/Ontology/Actor
+<http://bim.aalto.fi/DiCtion/Ontology/Actor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bim.aalto.fi/DiCtion/Ontology/Actor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bim.aalto.fi/DiCtion/Ontology/Resource> .
+<http://bim.aalto.fi/DiCtion/Ontology/Actor> <http://www.w3.org/2000/01/rdf-schema#comment> "Actor is a subclass of Resource, which refers to all the agents that are responsible of activities."@en .
+# 
+# http://bim.aalto.fi/DiCtion/Ontology/Company
+<http://bim.aalto.fi/DiCtion/Ontology/Company> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bim.aalto.fi/DiCtion/Ontology/Company> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bim.aalto.fi/DiCtion/Ontology/Organization> .
+<http://bim.aalto.fi/DiCtion/Ontology/Company> <http://www.w3.org/2000/01/rdf-schema#comment> "A commercial business unit that involves in the process."@en .
+# 
+# http://bim.aalto.fi/DiCtion/Ontology/Contract
+<http://bim.aalto.fi/DiCtion/Ontology/Contract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bim.aalto.fi/DiCtion/Ontology/Contract> <http://www.w3.org/2000/01/rdf-schema#comment> "An agreement that declares the obligations and duties for each of the participants."@en .
+# 
+# http://bim.aalto.fi/DiCtion/Ontology/Delivery
+<http://bim.aalto.fi/DiCtion/Ontology/Delivery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bim.aalto.fi/DiCtion/Ontology/Delivery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bim.aalto.fi/DiCtion/Ontology/Obligation> .
+<http://bim.aalto.fi/DiCtion/Ontology/Delivery> <http://www.w3.org/2000/01/rdf-schema#comment> "the action of delivering required objects"@en .
+# 
+# http://bim.aalto.fi/DiCtion/Ontology/DependencyConstraint
+<http://bim.aalto.fi/DiCtion/Ontology/DependencyConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bim.aalto.fi/DiCtion/Ontology/DependencyConstraint> <http://www.w3.org/2000/01/rdf-schema#comment> "Constraints to formalize the obligations"@en .
+# 
+# http://bim.aalto.fi/DiCtion/Ontology/DomainObject
+<http://bim.aalto.fi/DiCtion/Ontology/DomainObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bim.aalto.fi/DiCtion/Ontology/DomainObject> <http://www.w3.org/2000/01/rdf-schema#comment> "Domain objects is a abstract concept that refers to all the central objects that are discussed in the construction project planning and management. Sub-classes of the domain object include the 'Activity','Group','Information Entity','Physical Entity',and 'Resource'. Domain objects can have their specific classification that is defined by certain classification scheme in the construction domain, such as Uniformat, Omniclass and etc. Meanwhile, they can also have their level assignment that is defined based level of detail, level of development, level of application and etc."@en .
+# 
+# http://bim.aalto.fi/DiCtion/Ontology/DueDate
+<http://bim.aalto.fi/DiCtion/Ontology/DueDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bim.aalto.fi/DiCtion/Ontology/DueDate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bim.aalto.fi/DiCtion/Ontology/DependencyConstraint> .
+<http://bim.aalto.fi/DiCtion/Ontology/DueDate> <http://www.w3.org/2000/01/rdf-schema#comment> "An time constraint of the final time of fulfiling the obligation"@en .
+# 
+# http://bim.aalto.fi/DiCtion/Ontology/LeadTime
+<http://bim.aalto.fi/DiCtion/Ontology/LeadTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bim.aalto.fi/DiCtion/Ontology/LeadTime> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bim.aalto.fi/DiCtion/Ontology/DependencyConstraint> .
+<http://bim.aalto.fi/DiCtion/Ontology/LeadTime> <http://www.w3.org/2000/01/rdf-schema#comment> "An time constraint of the time between the initiation and completion of a production process."@en .
+# 
+# http://bim.aalto.fi/DiCtion/Ontology/Obligation
+<http://bim.aalto.fi/DiCtion/Ontology/Obligation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bim.aalto.fi/DiCtion/Ontology/Obligation> <http://www.w3.org/2000/01/rdf-schema#comment> "Obligation refers to specific duty of an actor to act, which is determined base on the contract."@en .
+# 
+# http://bim.aalto.fi/DiCtion/Ontology/Organization
+<http://bim.aalto.fi/DiCtion/Ontology/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bim.aalto.fi/DiCtion/Ontology/Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bim.aalto.fi/DiCtion/Ontology/Actor> .
+<http://bim.aalto.fi/DiCtion/Ontology/Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "An organized group of people with a particular purpose involves in the process."@en .
+# 
+# http://bim.aalto.fi/DiCtion/Ontology/Payment
+<http://bim.aalto.fi/DiCtion/Ontology/Payment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bim.aalto.fi/DiCtion/Ontology/Payment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bim.aalto.fi/DiCtion/Ontology/Obligation> .
+<http://bim.aalto.fi/DiCtion/Ontology/Payment> <http://www.w3.org/2000/01/rdf-schema#comment> "the action or process of paying"@en .
+# 
+# http://bim.aalto.fi/DiCtion/Ontology/Person
+<http://bim.aalto.fi/DiCtion/Ontology/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bim.aalto.fi/DiCtion/Ontology/Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bim.aalto.fi/DiCtion/Ontology/Actor> .
+<http://bim.aalto.fi/DiCtion/Ontology/Person> <http://www.w3.org/2000/01/rdf-schema#comment> "A human being involves in the process."@en .
+# 
+# http://bim.aalto.fi/DiCtion/Ontology/Resource
+<http://bim.aalto.fi/DiCtion/Ontology/Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bim.aalto.fi/DiCtion/Ontology/Resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bim.aalto.fi/DiCtion/Ontology/DomainObject> .
+<http://bim.aalto.fi/DiCtion/Ontology/Resource> <http://www.w3.org/2000/01/rdf-schema#comment> "Resource concept refers to the objects within a construction project that participate in value-adding transformations but that are not ultimately transformed themselves (such as labors and equipments)."@en .
+# 
+# Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/
