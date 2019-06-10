@@ -1,9 +1,9 @@
-<http://w3id.org/digitalconstruction/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://w3id.org/digitalconstruction/> <http://www.w3.org/2002/07/owl#versionIRI> <http://w3id.org/digitalconstruction/Organization/0.9.2> .
-<http://w3id.org/digitalconstruction/> <http://purl.org/dc/terms/creator> "Seppo Torma"@en .
-<http://w3id.org/digitalconstruction/> <http://purl.org/dc/terms/creator> "Yuan Zheng"@en .
-<http://w3id.org/digitalconstruction/> <http://www.w3.org/2000/01/rdf-schema#comment> "This Construction Organization ontology is known as one module of SSP ontology of DiCtion project. The purpose of this module is to support data sharing of the organization and business information that related to the construction project. This module can be used in organization-related information management use cases."@en .
-<http://w3id.org/digitalconstruction/> <http://www.w3.org/2002/07/owl#versionInfo> "0.9.2" .
+<http://w3id.org/digitalconstruction/organization/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://w3id.org/digitalconstruction/organization/> <http://www.w3.org/2002/07/owl#versionIRI> <http://w3id.org/digitalconstruction/organization/0.9.2> .
+<http://w3id.org/digitalconstruction/organization/> <http://purl.org/dc/terms/creator> "Seppo Torma"@en .
+<http://w3id.org/digitalconstruction/organization/> <http://purl.org/dc/terms/creator> "Yuan Zheng"@en .
+<http://w3id.org/digitalconstruction/organization/> <http://www.w3.org/2000/01/rdf-schema#comment> "This Construction Organization ontology is known as one module of SSP ontology of DiCtion project. The purpose of this module is to support data sharing of the organization and business information that related to the construction project. This module can be used in organization-related information management use cases."@en .
+<http://w3id.org/digitalconstruction/organization/> <http://www.w3.org/2002/07/owl#versionInfo> "0.9.2" .
 # 
 # 
 # #################################################################
