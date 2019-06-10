@@ -325,37 +325,37 @@
   "propertyAttribute" : [ {
     "range" : "8",
     "domain" : "7",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "6"
   }, {
     "range" : "8",
     "domain" : "10",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "9"
   }, {
     "range" : "4",
     "domain" : "12",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "11"
   }, {
     "range" : "1",
     "domain" : "14",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "13"
   }, {
     "range" : "1",
     "domain" : "0",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "15"
   }, {
     "range" : "3",
     "domain" : "2",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "16"
   }, {
     "range" : "18",
     "domain" : "3",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "17"
   }, {
     "iri" : "http://w3id.org/digitalconstruction/retricts",
@@ -368,12 +368,12 @@
     "comment" : {
       "undefined" : "Relation between Contract and Obligation that indicates obligation is restricted by corresdented statement in Contract"
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "19"
   }, {
     "range" : "18",
     "domain" : "22",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "21"
   }, {
     "iri" : "http://w3id.org/digitalconstruction/hasObject",
@@ -386,17 +386,17 @@
     "comment" : {
       "en" : "A relation of between object-relevant concepts and their related domain object"
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "23"
   }, {
     "range" : "2",
     "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "24"
   }, {
     "range" : "2",
     "domain" : "5",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "25"
   }, {
     "iri" : "http://w3id.org/digitalconstruction/depandsOn",
@@ -409,7 +409,7 @@
     "comment" : {
       "en" : "Relation between an Obligation and its correspondent dependency constraints"
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "26"
   }, {
     "iri" : "http://w3id.org/digitalconstruction/fulfilObligation",
@@ -422,7 +422,7 @@
     "comment" : {
       "en" : "A relation between an actor who should fulfil obligation and the obligation"
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "27"
   }, {
     "iri" : "http://w3id.org/digitalconstruction/isPromiseeof",
@@ -435,7 +435,7 @@
     "comment" : {
       "en" : "Relation that indicates an actor is the promisee of correspondent contract"
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "28"
   }, {
     "iri" : "http://w3id.org/digitalconstruction/isResponsiblefor",
@@ -448,7 +448,7 @@
     "comment" : {
       "en" : "Relation between an actor and its responsible activity"
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "29"
   }, {
     "iri" : "http://w3id.org/digitalconstruction/isPromisorof",
@@ -461,7 +461,7 @@
     "comment" : {
       "en" : "Relation that indicates an actor is the promisor of correspondent contract"
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "30"
   }, {
     "iri" : "http://w3id.org/digitalconstruction/belongsTo",
@@ -474,7 +474,7 @@
     "comment" : {
       "en" : "Relation of rersonnel affiliation between a Person and a Organization."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "31"
   }, {
     "iri" : "http://w3id.org/digitalconstruction/receiveObligation",
@@ -487,7 +487,7 @@
     "comment" : {
       "en" : "Relation between an actor who receive obligation and the correspondent obligation"
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "32"
   } ]
 }
