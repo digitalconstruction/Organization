@@ -2,17 +2,29 @@
   "_comment" : "Created with OWL2VOWL (version 0.3.4), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "en", "undefined" ],
-    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://bim.aalto.fi/DiCtion/Ontology", "http://www.w3.org/2001/XMLSchema" ],
-    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/",
-    "version" : "0.9.1",
+    "baseIris" : [ "http://w3id.org/digitalconstruction", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "iri" : "http://w3id.org/digitalconstruction/",
+    "version" : "0.9.2",
+    "author" : [ "Yuan Zheng", "Seppo Torma" ],
     "comments" : {
-      "en" : "Seppo Torma"
+      "en" : "This Construction Organization ontology is known as one module of SSP ontology of DiCtion project. The purpose of this module is to support data sharing of the organization and business information that related to the construction project. This module can be used in organization-related information management use cases."
     },
     "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "en",
+        "value" : "Yuan Zheng",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "en",
+        "value" : "Seppo Torma",
+        "type" : "label"
+      } ],
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
-        "value" : "0.9.1",
+        "value" : "0.9.2",
         "type" : "label"
       } ]
     }
@@ -28,7 +40,7 @@
     "id" : "0",
     "type" : "owl:Class"
   }, {
-    "id" : "4",
+    "id" : "2",
     "type" : "owl:Class"
   }, {
     "id" : "7",
@@ -37,63 +49,39 @@
     "id" : "8",
     "type" : "owl:Class"
   }, {
-    "id" : "11",
-    "type" : "owl:Class"
-  }, {
-    "id" : "6",
+    "id" : "4",
     "type" : "owl:Class"
   }, {
     "id" : "22",
     "type" : "owl:Class"
   }, {
-    "id" : "13",
-    "type" : "owl:Class"
-  }, {
-    "id" : "12",
+    "id" : "14",
     "type" : "owl:Class"
   }, {
     "id" : "1",
     "type" : "owl:Class"
   }, {
-    "id" : "5",
-    "type" : "owl:Class"
-  }, {
-    "id" : "19",
+    "id" : "20",
     "type" : "owl:Class"
   }, {
     "id" : "3",
     "type" : "owl:Class"
   }, {
-    "id" : "16",
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
-    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/LeadTime",
-    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "LeadTime"
-    },
-    "comment" : {
-      "en" : "An time constraint of the time between the initiation and completion of a production process."
-    },
-    "id" : "0",
-    "superClasses" : [ "1" ]
-  }, {
-    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/DomainObject",
-    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "DomainObject"
-    },
-    "subClasses" : [ "5", "6" ],
-    "comment" : {
-      "en" : "Domain objects is a abstract concept that refers to all the central objects that are discussed in the construction project planning and management. Sub-classes of the domain object include the 'Activity','Group','Information Entity','Physical Entity',and 'Resource'. Domain objects can have their specific classification that is defined by certain classification scheme in the construction domain, such as Uniformat, Omniclass and etc. Meanwhile, they can also have their level assignment that is defined based level of detail, level of development, level of application and etc."
-    },
-    "id" : "4"
-  }, {
-    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/Payment",
-    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
+    "iri" : "http://w3id.org/digitalconstruction/Payment",
+    "baseIri" : "http://w3id.org/digitalconstruction",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Payment"
@@ -101,48 +89,24 @@
     "comment" : {
       "en" : "the action or process of paying"
     },
-    "id" : "7",
-    "superClasses" : [ "8" ]
+    "id" : "0",
+    "superClasses" : [ "1" ]
   }, {
-    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/Obligation",
-    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Obligation"
-    },
-    "subClasses" : [ "7", "3" ],
-    "comment" : {
-      "en" : "Obligation refers to specific duty of an actor to act, which is determined base on the contract."
-    },
-    "id" : "8"
-  }, {
-    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/Actor",
-    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
+    "iri" : "http://w3id.org/digitalconstruction/Actor",
+    "baseIri" : "http://w3id.org/digitalconstruction",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Actor"
     },
-    "subClasses" : [ "12", "13" ],
+    "subClasses" : [ "4", "5" ],
     "comment" : {
       "en" : "Actor is a subclass of Resource, which refers to all the agents that are responsible of activities."
     },
-    "id" : "11",
-    "superClasses" : [ "5" ]
+    "id" : "2",
+    "superClasses" : [ "3" ]
   }, {
-    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/Activity",
-    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Activity"
-    },
-    "comment" : {
-      "en" : "Activity is the concept refers to all the works (or aggregations of works) that carried out in a construction project."
-    },
-    "id" : "6",
-    "superClasses" : [ "4" ]
-  }, {
-    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/DueDate",
-    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
+    "iri" : "http://w3id.org/digitalconstruction/DueDate",
+    "baseIri" : "http://w3id.org/digitalconstruction",
     "instances" : 0,
     "label" : {
       "IRI-based" : "DueDate"
@@ -150,73 +114,48 @@
     "comment" : {
       "en" : "An time constraint of the final time of fulfiling the obligation"
     },
-    "id" : "22",
-    "superClasses" : [ "1" ]
+    "id" : "7",
+    "superClasses" : [ "8" ]
   }, {
-    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/Organization",
-    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Organization"
-    },
-    "subClasses" : [ "19" ],
-    "comment" : {
-      "en" : "An organized group of people with a particular purpose involves in the process."
-    },
-    "id" : "13",
-    "superClasses" : [ "11" ]
-  }, {
-    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/Person",
-    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Person"
-    },
-    "comment" : {
-      "en" : "A human being involves in the process."
-    },
-    "id" : "12",
-    "superClasses" : [ "11" ]
-  }, {
-    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/DependencyConstraint",
-    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
+    "iri" : "http://w3id.org/digitalconstruction/DependencyConstraint",
+    "baseIri" : "http://w3id.org/digitalconstruction",
     "instances" : 0,
     "label" : {
       "IRI-based" : "DependencyConstraint"
     },
-    "subClasses" : [ "0", "22" ],
+    "subClasses" : [ "7", "10" ],
     "comment" : {
       "en" : "Constraints to formalize the obligations"
     },
-    "id" : "1"
+    "id" : "8"
   }, {
-    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/Resource",
-    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
+    "iri" : "http://w3id.org/digitalconstruction/Organization",
+    "baseIri" : "http://w3id.org/digitalconstruction",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Resource"
+      "IRI-based" : "Organization"
     },
-    "subClasses" : [ "11" ],
+    "subClasses" : [ "12" ],
     "comment" : {
-      "en" : "Resource concept refers to the objects within a construction project that participate in value-adding transformations but that are not ultimately transformed themselves (such as labors and equipments)."
+      "en" : "An organized group of people with a particular purpose involves in the process."
     },
-    "id" : "5",
-    "superClasses" : [ "4" ]
+    "id" : "4",
+    "superClasses" : [ "2" ]
   }, {
-    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/Company",
-    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
+    "iri" : "http://w3id.org/digitalconstruction/Activity",
+    "baseIri" : "http://w3id.org/digitalconstruction",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Company"
+      "IRI-based" : "Activity"
     },
     "comment" : {
-      "en" : "A commercial business unit that involves in the process."
+      "en" : "Activity is the concept refers to all the works (or aggregations of works) that carried out in a construction project."
     },
-    "id" : "19",
-    "superClasses" : [ "13" ]
+    "id" : "22",
+    "superClasses" : [ "18" ]
   }, {
-    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/Delivery",
-    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
+    "iri" : "http://w3id.org/digitalconstruction/Delivery",
+    "baseIri" : "http://w3id.org/digitalconstruction",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Delivery"
@@ -224,11 +163,23 @@
     "comment" : {
       "en" : "the action of delivering required objects"
     },
-    "id" : "3",
-    "superClasses" : [ "8" ]
+    "id" : "14",
+    "superClasses" : [ "1" ]
   }, {
-    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/Contract",
-    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
+    "iri" : "http://w3id.org/digitalconstruction/Obligation",
+    "baseIri" : "http://w3id.org/digitalconstruction",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Obligation"
+    },
+    "subClasses" : [ "14", "0" ],
+    "comment" : {
+      "en" : "Obligation refers to specific duty of an actor to act, which is determined base on the contract."
+    },
+    "id" : "1"
+  }, {
+    "iri" : "http://w3id.org/digitalconstruction/Contract",
+    "baseIri" : "http://w3id.org/digitalconstruction",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Contract"
@@ -236,47 +187,108 @@
     "comment" : {
       "en" : "An agreement that declares the obligations and duties for each of the participants."
     },
-    "id" : "16"
+    "id" : "20"
+  }, {
+    "iri" : "http://w3id.org/digitalconstruction/Resource",
+    "baseIri" : "http://w3id.org/digitalconstruction",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Resource"
+    },
+    "subClasses" : [ "2" ],
+    "comment" : {
+      "en" : "Resource concept refers to the objects within a construction project that participate in value-adding transformations but that are not ultimately transformed themselves (such as labors and equipments)."
+    },
+    "id" : "3",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://w3id.org/digitalconstruction/LeadTime",
+    "baseIri" : "http://w3id.org/digitalconstruction",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LeadTime"
+    },
+    "comment" : {
+      "en" : "An time constraint of the time between the initiation and completion of a production process."
+    },
+    "id" : "10",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://w3id.org/digitalconstruction/Person",
+    "baseIri" : "http://w3id.org/digitalconstruction",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "comment" : {
+      "en" : "A human being involves in the process."
+    },
+    "id" : "5",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://w3id.org/digitalconstruction/Company",
+    "baseIri" : "http://w3id.org/digitalconstruction",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Company"
+    },
+    "comment" : {
+      "en" : "A commercial business unit that involves in the process."
+    },
+    "id" : "12",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://w3id.org/digitalconstruction/DomainObject",
+    "baseIri" : "http://w3id.org/digitalconstruction",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DomainObject"
+    },
+    "subClasses" : [ "3", "22" ],
+    "comment" : {
+      "en" : "Domain objects is a abstract concept that refers to all the central objects that are discussed in the construction project planning and management. Sub-classes of the domain object include the 'Activity','Group','Information Entity','Physical Entity',and 'Resource'. Domain objects can have their specific classification that is defined by certain classification scheme in the construction domain, such as Uniformat, Omniclass and etc. Meanwhile, they can also have their level assignment that is defined based level of detail, level of development, level of application and etc."
+    },
+    "id" : "18"
   } ],
   "property" : [ {
-    "id" : "2",
-    "type" : "owl:objectProperty"
+    "id" : "6",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "9",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "10",
+    "id" : "11",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "14",
+    "id" : "13",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "15",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "17",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "18",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "20",
-    "type" : "rdfs:SubClassOf"
+    "id" : "19",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "21",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "23",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "24",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "25",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "26",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "27",
     "type" : "owl:objectProperty"
@@ -297,169 +309,169 @@
     "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
-    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/hasObject",
-    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
-    "range" : "4",
-    "label" : {
-      "IRI-based" : "hasObject"
-    },
-    "domain" : "3",
-    "comment" : {
-      "en" : "A relation of between object-relevant concepts and their related domain object"
-    },
-    "attributes" : [ "object" ],
-    "id" : "2"
-  }, {
     "range" : "8",
     "domain" : "7",
     "attributes" : [ "object", "anonymous" ],
+    "id" : "6"
+  }, {
+    "range" : "8",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "9"
   }, {
-    "range" : "8",
-    "domain" : "3",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "10"
-  }, {
-    "range" : "11",
+    "range" : "4",
     "domain" : "12",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "14"
+    "id" : "11"
   }, {
-    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/retricts",
-    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
-    "range" : "8",
-    "label" : {
-      "IRI-based" : "retricts"
-    },
-    "domain" : "16",
-    "comment" : {
-      "undefined" : "Relation between Contract and Obligation that indicates obligation is restricted by corresdented statement in Contract"
-    },
-    "attributes" : [ "object" ],
-    "id" : "15"
-  }, {
-    "range" : "11",
-    "domain" : "13",
+    "range" : "1",
+    "domain" : "14",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "17"
-  }, {
-    "range" : "13",
-    "domain" : "19",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "18"
+    "id" : "13"
   }, {
     "range" : "1",
     "domain" : "0",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "20"
+    "id" : "15"
   }, {
+    "range" : "3",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "16"
+  }, {
+    "range" : "18",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://w3id.org/digitalconstruction/retricts",
+    "baseIri" : "http://w3id.org/digitalconstruction",
     "range" : "1",
+    "label" : {
+      "IRI-based" : "retricts"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "Relation between Contract and Obligation that indicates obligation is restricted by corresdented statement in Contract"
+    },
+    "attributes" : [ "object" ],
+    "id" : "19"
+  }, {
+    "range" : "18",
     "domain" : "22",
     "attributes" : [ "object", "anonymous" ],
     "id" : "21"
   }, {
-    "range" : "5",
-    "domain" : "11",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "23"
-  }, {
-    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/depandsOn",
-    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
-    "range" : "1",
+    "iri" : "http://w3id.org/digitalconstruction/hasObject",
+    "baseIri" : "http://w3id.org/digitalconstruction",
+    "range" : "18",
     "label" : {
-      "IRI-based" : "depandsOn"
+      "IRI-based" : "hasObject"
     },
-    "domain" : "8",
+    "domain" : "14",
     "comment" : {
-      "en" : "Relation between an Obligation and its correspondent dependency constraints"
+      "en" : "A relation of between object-relevant concepts and their related domain object"
     },
     "attributes" : [ "object" ],
+    "id" : "23"
+  }, {
+    "range" : "2",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "24"
   }, {
-    "range" : "4",
+    "range" : "2",
     "domain" : "5",
     "attributes" : [ "object", "anonymous" ],
     "id" : "25"
   }, {
-    "range" : "4",
-    "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
+    "iri" : "http://w3id.org/digitalconstruction/depandsOn",
+    "baseIri" : "http://w3id.org/digitalconstruction",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "depandsOn"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Relation between an Obligation and its correspondent dependency constraints"
+    },
+    "attributes" : [ "object" ],
     "id" : "26"
   }, {
-    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/fulfilObligation",
-    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
-    "range" : "8",
+    "iri" : "http://w3id.org/digitalconstruction/fulfilObligation",
+    "baseIri" : "http://w3id.org/digitalconstruction",
+    "range" : "1",
     "label" : {
       "IRI-based" : "fulfilObligation"
     },
-    "domain" : "11",
+    "domain" : "2",
     "comment" : {
       "en" : "A relation between an actor who should fulfil obligation and the obligation"
     },
     "attributes" : [ "object" ],
     "id" : "27"
   }, {
-    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/isPromiseeof",
-    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
-    "range" : "16",
+    "iri" : "http://w3id.org/digitalconstruction/isPromiseeof",
+    "baseIri" : "http://w3id.org/digitalconstruction",
+    "range" : "20",
     "label" : {
       "IRI-based" : "isPromiseeof"
     },
-    "domain" : "11",
+    "domain" : "2",
     "comment" : {
       "en" : "Relation that indicates an actor is the promisee of correspondent contract"
     },
     "attributes" : [ "object" ],
     "id" : "28"
   }, {
-    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/isResponsiblefor",
-    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
-    "range" : "6",
+    "iri" : "http://w3id.org/digitalconstruction/isResponsiblefor",
+    "baseIri" : "http://w3id.org/digitalconstruction",
+    "range" : "22",
     "label" : {
       "IRI-based" : "isResponsiblefor"
     },
-    "domain" : "11",
+    "domain" : "2",
     "comment" : {
-      "en" : "relation between an actor and its responsible activity"
+      "en" : "Relation between an actor and its responsible activity"
     },
     "attributes" : [ "object" ],
     "id" : "29"
   }, {
-    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/isPromisorof",
-    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
-    "range" : "16",
+    "iri" : "http://w3id.org/digitalconstruction/isPromisorof",
+    "baseIri" : "http://w3id.org/digitalconstruction",
+    "range" : "20",
     "label" : {
       "IRI-based" : "isPromisorof"
     },
-    "domain" : "11",
+    "domain" : "2",
     "comment" : {
       "en" : "Relation that indicates an actor is the promisor of correspondent contract"
     },
     "attributes" : [ "object" ],
     "id" : "30"
   }, {
-    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/belongsTo",
-    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
-    "range" : "13",
+    "iri" : "http://w3id.org/digitalconstruction/belongsTo",
+    "baseIri" : "http://w3id.org/digitalconstruction",
+    "range" : "4",
     "label" : {
       "IRI-based" : "belongsTo"
     },
-    "domain" : "12",
+    "domain" : "5",
     "comment" : {
-      "en" : "Relation of Personnel affiliation between a Person and a Organization."
+      "en" : "Relation of rersonnel affiliation between a Person and a Organization."
     },
     "attributes" : [ "object" ],
     "id" : "31"
   }, {
-    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/receiveObligation",
-    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
-    "range" : "8",
+    "iri" : "http://w3id.org/digitalconstruction/receiveObligation",
+    "baseIri" : "http://w3id.org/digitalconstruction",
+    "range" : "1",
     "label" : {
       "IRI-based" : "receiveObligation"
     },
-    "domain" : "11",
+    "domain" : "2",
     "comment" : {
-      "en" : "A relation between an actor who receive obligation and the obligation"
+      "en" : "Relation between an actor who receive obligation and the correspondent obligation"
     },
     "attributes" : [ "object" ],
     "id" : "32"

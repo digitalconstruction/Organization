@@ -1,267 +1,265 @@
 [ {
-  "@id" : "http://bim.aalto.fi/DiCtion/Ontology/",
+  "@id" : "http://w3id.org/digitalconstruction/",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://purl.org/dc/terms/creator" : [ {
     "@language" : "en",
     "@value" : "Seppo Torma"
   }, {
     "@language" : "en",
-    "@value" : "This Construction Organization ontology is known as one module of SSP ontology of DiCtion project. The purpose of this module is to support data sharing of the organization and business information that related to the construction project. This module can be used in organization-related information management use cases."
-  }, {
-    "@language" : "en",
     "@value" : "Yuan Zheng"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This Construction Organization ontology is known as one module of SSP ontology of DiCtion project. The purpose of this module is to support data sharing of the organization and business information that related to the construction project. This module can be used in organization-related information management use cases."
+  } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "http://bim.aalto.fi/DiCtion/Ontology/ConstructionOrganization/0.9.1"
+    "@id" : "http://w3id.org/digitalconstruction/Organization/0.9.2"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "0.9.1"
+    "@value" : "0.9.2"
   } ]
 }, {
-  "@id" : "http://bim.aalto.fi/DiCtion/Ontology/Activity",
+  "@id" : "http://w3id.org/digitalconstruction/Activity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Activity is the concept refers to all the works (or aggregations of works) that carried out in a construction project."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://bim.aalto.fi/DiCtion/Ontology/DomainObject"
+    "@id" : "http://w3id.org/digitalconstruction/DomainObject"
   } ]
 }, {
-  "@id" : "http://bim.aalto.fi/DiCtion/Ontology/Actor",
+  "@id" : "http://w3id.org/digitalconstruction/Actor",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Actor is a subclass of Resource, which refers to all the agents that are responsible of activities."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://bim.aalto.fi/DiCtion/Ontology/Resource"
+    "@id" : "http://w3id.org/digitalconstruction/Resource"
   } ]
 }, {
-  "@id" : "http://bim.aalto.fi/DiCtion/Ontology/Company",
+  "@id" : "http://w3id.org/digitalconstruction/Company",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A commercial business unit that involves in the process."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://bim.aalto.fi/DiCtion/Ontology/Organization"
+    "@id" : "http://w3id.org/digitalconstruction/Organization"
   } ]
 }, {
-  "@id" : "http://bim.aalto.fi/DiCtion/Ontology/Contract",
+  "@id" : "http://w3id.org/digitalconstruction/Contract",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "An agreement that declares the obligations and duties for each of the participants."
   } ]
 }, {
-  "@id" : "http://bim.aalto.fi/DiCtion/Ontology/Delivery",
+  "@id" : "http://w3id.org/digitalconstruction/Delivery",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "the action of delivering required objects"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://bim.aalto.fi/DiCtion/Ontology/Obligation"
+    "@id" : "http://w3id.org/digitalconstruction/Obligation"
   } ]
 }, {
-  "@id" : "http://bim.aalto.fi/DiCtion/Ontology/DependencyConstraint",
+  "@id" : "http://w3id.org/digitalconstruction/DependencyConstraint",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Constraints to formalize the obligations"
   } ]
 }, {
-  "@id" : "http://bim.aalto.fi/DiCtion/Ontology/DomainObject",
+  "@id" : "http://w3id.org/digitalconstruction/DomainObject",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Domain objects is a abstract concept that refers to all the central objects that are discussed in the construction project planning and management. Sub-classes of the domain object include the 'Activity','Group','Information Entity','Physical Entity',and 'Resource'. Domain objects can have their specific classification that is defined by certain classification scheme in the construction domain, such as Uniformat, Omniclass and etc. Meanwhile, they can also have their level assignment that is defined based level of detail, level of development, level of application and etc."
   } ]
 }, {
-  "@id" : "http://bim.aalto.fi/DiCtion/Ontology/DueDate",
+  "@id" : "http://w3id.org/digitalconstruction/DueDate",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "An time constraint of the final time of fulfiling the obligation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://bim.aalto.fi/DiCtion/Ontology/DependencyConstraint"
+    "@id" : "http://w3id.org/digitalconstruction/DependencyConstraint"
   } ]
 }, {
-  "@id" : "http://bim.aalto.fi/DiCtion/Ontology/LeadTime",
+  "@id" : "http://w3id.org/digitalconstruction/LeadTime",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "An time constraint of the time between the initiation and completion of a production process."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://bim.aalto.fi/DiCtion/Ontology/DependencyConstraint"
+    "@id" : "http://w3id.org/digitalconstruction/DependencyConstraint"
   } ]
 }, {
-  "@id" : "http://bim.aalto.fi/DiCtion/Ontology/Obligation",
+  "@id" : "http://w3id.org/digitalconstruction/Obligation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Obligation refers to specific duty of an actor to act, which is determined base on the contract."
   } ]
 }, {
-  "@id" : "http://bim.aalto.fi/DiCtion/Ontology/Organization",
+  "@id" : "http://w3id.org/digitalconstruction/Organization",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "An organized group of people with a particular purpose involves in the process."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://bim.aalto.fi/DiCtion/Ontology/Actor"
+    "@id" : "http://w3id.org/digitalconstruction/Actor"
   } ]
 }, {
-  "@id" : "http://bim.aalto.fi/DiCtion/Ontology/Payment",
+  "@id" : "http://w3id.org/digitalconstruction/Payment",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "the action or process of paying"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://bim.aalto.fi/DiCtion/Ontology/Obligation"
+    "@id" : "http://w3id.org/digitalconstruction/Obligation"
   } ]
 }, {
-  "@id" : "http://bim.aalto.fi/DiCtion/Ontology/Person",
+  "@id" : "http://w3id.org/digitalconstruction/Person",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A human being involves in the process."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://bim.aalto.fi/DiCtion/Ontology/Actor"
+    "@id" : "http://w3id.org/digitalconstruction/Actor"
   } ]
 }, {
-  "@id" : "http://bim.aalto.fi/DiCtion/Ontology/Resource",
+  "@id" : "http://w3id.org/digitalconstruction/Resource",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Resource concept refers to the objects within a construction project that participate in value-adding transformations but that are not ultimately transformed themselves (such as labors and equipments)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://bim.aalto.fi/DiCtion/Ontology/DomainObject"
+    "@id" : "http://w3id.org/digitalconstruction/DomainObject"
   } ]
 }, {
-  "@id" : "http://bim.aalto.fi/DiCtion/Ontology/belongsTo",
+  "@id" : "http://w3id.org/digitalconstruction/belongsTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Relation of Personnel affiliation between a Person and a Organization."
+    "@value" : "Relation of rersonnel affiliation between a Person and a Organization."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://bim.aalto.fi/DiCtion/Ontology/Person"
+    "@id" : "http://w3id.org/digitalconstruction/Person"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://bim.aalto.fi/DiCtion/Ontology/Organization"
+    "@id" : "http://w3id.org/digitalconstruction/Organization"
   } ]
 }, {
-  "@id" : "http://bim.aalto.fi/DiCtion/Ontology/depandsOn",
+  "@id" : "http://w3id.org/digitalconstruction/depandsOn",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Relation between an Obligation and its correspondent dependency constraints"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://bim.aalto.fi/DiCtion/Ontology/Obligation"
+    "@id" : "http://w3id.org/digitalconstruction/Obligation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://bim.aalto.fi/DiCtion/Ontology/DependencyConstraint"
+    "@id" : "http://w3id.org/digitalconstruction/DependencyConstraint"
   } ]
 }, {
-  "@id" : "http://bim.aalto.fi/DiCtion/Ontology/fulfilObligation",
+  "@id" : "http://w3id.org/digitalconstruction/fulfilObligation",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A relation between an actor who should fulfil obligation and the obligation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://bim.aalto.fi/DiCtion/Ontology/Actor"
+    "@id" : "http://w3id.org/digitalconstruction/Actor"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://bim.aalto.fi/DiCtion/Ontology/Obligation"
+    "@id" : "http://w3id.org/digitalconstruction/Obligation"
   } ]
 }, {
-  "@id" : "http://bim.aalto.fi/DiCtion/Ontology/hasObject",
+  "@id" : "http://w3id.org/digitalconstruction/hasObject",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A relation of between object-relevant concepts and their related domain object"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://bim.aalto.fi/DiCtion/Ontology/Delivery"
+    "@id" : "http://w3id.org/digitalconstruction/Delivery"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://bim.aalto.fi/DiCtion/Ontology/DomainObject"
+    "@id" : "http://w3id.org/digitalconstruction/DomainObject"
   } ]
 }, {
-  "@id" : "http://bim.aalto.fi/DiCtion/Ontology/isPromiseeof",
+  "@id" : "http://w3id.org/digitalconstruction/isPromiseeof",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Relation that indicates an actor is the promisee of correspondent contract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://bim.aalto.fi/DiCtion/Ontology/Actor"
+    "@id" : "http://w3id.org/digitalconstruction/Actor"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://bim.aalto.fi/DiCtion/Ontology/Contract"
+    "@id" : "http://w3id.org/digitalconstruction/Contract"
   } ]
 }, {
-  "@id" : "http://bim.aalto.fi/DiCtion/Ontology/isPromisorof",
+  "@id" : "http://w3id.org/digitalconstruction/isPromisorof",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Relation that indicates an actor is the promisor of correspondent contract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://bim.aalto.fi/DiCtion/Ontology/Actor"
+    "@id" : "http://w3id.org/digitalconstruction/Actor"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://bim.aalto.fi/DiCtion/Ontology/Contract"
+    "@id" : "http://w3id.org/digitalconstruction/Contract"
   } ]
 }, {
-  "@id" : "http://bim.aalto.fi/DiCtion/Ontology/isResponsiblefor",
+  "@id" : "http://w3id.org/digitalconstruction/isResponsiblefor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "relation between an actor and its responsible activity"
+    "@value" : "Relation between an actor and its responsible activity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://bim.aalto.fi/DiCtion/Ontology/Actor"
+    "@id" : "http://w3id.org/digitalconstruction/Actor"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://bim.aalto.fi/DiCtion/Ontology/Activity"
+    "@id" : "http://w3id.org/digitalconstruction/Activity"
   } ]
 }, {
-  "@id" : "http://bim.aalto.fi/DiCtion/Ontology/receiveObligation",
+  "@id" : "http://w3id.org/digitalconstruction/receiveObligation",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "A relation between an actor who receive obligation and the obligation"
+    "@value" : "Relation between an actor who receive obligation and the correspondent obligation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://bim.aalto.fi/DiCtion/Ontology/Actor"
+    "@id" : "http://w3id.org/digitalconstruction/Actor"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://bim.aalto.fi/DiCtion/Ontology/Obligation"
+    "@id" : "http://w3id.org/digitalconstruction/Obligation"
   } ]
 }, {
-  "@id" : "http://bim.aalto.fi/DiCtion/Ontology/retricts",
+  "@id" : "http://w3id.org/digitalconstruction/retricts",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Relation between Contract and Obligation that indicates obligation is restricted by corresdented statement in Contract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://bim.aalto.fi/DiCtion/Ontology/Contract"
+    "@id" : "http://w3id.org/digitalconstruction/Contract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://bim.aalto.fi/DiCtion/Ontology/Obligation"
+    "@id" : "http://w3id.org/digitalconstruction/Obligation"
   } ]
-}, {
-  "@id" : "http://purl.org/dc/terms/creator",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 } ]
